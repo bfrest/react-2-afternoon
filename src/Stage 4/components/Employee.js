@@ -1,6 +1,11 @@
-export default class Employee {
+import React, { Component } from "react";
+
+class Employee extends Component {
   constructor(id, name, phone, title) {
-    (this.id = id), (this.name = name), (this.phone = phone), (this.title = title);
+    this.id = id;
+    this.name = name;
+    this.phone = phone;
+    this.title = title;
   }
 
   updateName(name) {
@@ -15,3 +20,5 @@ export default class Employee {
     this.title = title;
   }
 }
+
+export default Employee;
